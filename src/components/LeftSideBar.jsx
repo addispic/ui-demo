@@ -136,7 +136,7 @@ const LeftSideBar = () => {
         </div>
       </div>
       {/* bottom */}
-      <div className="py-3">
+      <div>
         <h3 className="text-xs text-neutral-400 my-1 uppercase">Settings</h3>
 
         <div className="flex items-center gap-x-1.5 px-1 text-neutral-500 transition-colors ease-in-out duration-150 hover:text-neutral-700 text-sm cursor-pointer mb-3">
