@@ -11,7 +11,7 @@ const App = () => {
       {/* left side bar */}
       <LeftSideBar />
       {/* content */}
-      <div className='flex-1 flex flex-col'>
+      <div className='flex-1 flex flex-col bg-neutral-100'>
         <Header /> 
         {/* pages */}
         <div className='flex-1 flex'>
