@@ -84,7 +84,7 @@ const Home = () => {
             <h1 className="my-3 text-3xl font-bold">
               Sharpen Your Skills with Professional Online Courses
             </h1>
-            <button className="flex items-center gap-x-3.5 px-2 py-1.5 rounded-full bg-black">
+            <button className="flex items-center gap-x-5 px-5 py-1.5 rounded-full bg-black">
               <span>Join now</span>
               <div className="w-[20px] aspect-square rounded-full bg-white text-black flex items-center justify-center">
                 <MdChevronRight />
