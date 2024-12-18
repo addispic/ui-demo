@@ -4,6 +4,8 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
 import { LuCalendarClock } from "react-icons/lu";
+import { LiaUserSolid } from "react-icons/lia";
+import { IoChevronDownOutline } from "react-icons/io5";
 
 const Home = () => {
   return (
@@ -50,6 +52,68 @@ const Home = () => {
                 <p>Anytime according to your schedule and your need</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* 2 */}
+      <div>
+        <div className="main-padding">
+          <div className="max-w-[820px] mx-auto bg-white shadow-xl rounded-md overflow-hidden p-3 flex items-end gap-x-3 mt-[-2.5rem] relative z-50">
+            {/* option grid */}
+            <div className="flex-1 grid grid-cols-4 gap-5">
+              {/* one */}
+              <div>
+                <p className="font-medium mb-1.5">Check Ins</p>
+                <div className="flex items-center gap-x-1.5 border border-neutral-300 rounded-full px-2 py-1">
+                  <input
+                    className="w-full focus:ring-0 focus:outline-none border-none bg-transparent text-sm"
+                    type="text"
+                    placeholder="Select Date"
+                  />
+                  <LuCalendarClock className="shrink-0 text-neutral-500" />
+                </div>
+              </div>
+              {/* two */}
+              <div>
+                <p className="font-medium mb-1.5">Check Out</p>
+                <div className="flex items-center gap-x-1.5 border border-neutral-300 rounded-full px-2 py-1">
+                  <input
+                    className="w-full focus:ring-0 focus:outline-none border-none bg-transparent text-sm"
+                    type="text"
+                    placeholder="Select Date"
+                  />
+                  <LuCalendarClock className="shrink-0 text-neutral-500" />
+                </div>
+              </div>
+              {/* three */}
+              <div>
+                <p className="font-medium mb-1.5">Guest</p>
+                <div className="flex items-center gap-x-1.5 border border-neutral-300 rounded-full px-2 py-1">
+                  <input
+                    className="w-full focus:ring-0 focus:outline-none border-none bg-transparent text-sm"
+                    type="text"
+                    placeholder="Persons"
+                  />
+                  <LiaUserSolid className="shrink-0 text-neutral-500" />
+                </div>
+              </div>
+              {/* four */}
+              <div>
+                <p className="font-medium mb-1.5">Accommodation</p>
+                <div className="flex items-center gap-x-1.5 border border-neutral-300 rounded-full px-2 py-1">
+                  <input
+                    className="w-full focus:ring-0 focus:outline-none border-none bg-transparent text-sm"
+                    type="text"
+                    placeholder="Tent Crafting"
+                  />
+                  <IoChevronDownOutline className="shrink-0 text-neutral-500" />
+                </div>
+              </div>
+            </div>
+            <button className="flex items-center gap-x-2.5 px-1.5 py-1 rounded-full bg-orange-500 text-white text-sm">
+              <span>Results</span>
+              <IoChevronDownOutline className="-rotate-90"/>
+            </button>
           </div>
         </div>
       </div>
