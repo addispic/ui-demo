@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 const App = () => {
   return (
-    <div className="w-screen h-screen overflow-y-auto">
+    <div className="w-screen h-screen overflow-y-auto relative">
       {/* header */}
       <Header />
       {/* page */}
