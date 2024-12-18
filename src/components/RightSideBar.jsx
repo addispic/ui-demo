@@ -1,4 +1,5 @@
 import React from "react";
+import Chart from "react-apexcharts";
 
 // icons
 import { IoMdMore } from "react-icons/io";
@@ -41,8 +42,74 @@ const RightSideBar = () => {
           </p>
         </div>
         {/* chart */}
-        <div className="my-5 p-3 bg-neutral-100 rounded-md overflow-hidden">
-          chart over here
+        <div className="my-5 px-3 py-1 bg-neutral-100 rounded-md overflow-hidden">
+          <Chart
+            type="bar"
+            width={"100%"}
+            height={110}
+            series={[
+              {
+                data: [200, 210, 170, 250,120,150,300,200],
+              },
+              
+            ]}
+            options={{
+              chart: {
+                zoom: {
+                  enabled: false
+                },
+                toolbar: {
+                  show: false
+                },
+              },
+              
+              dataLabels: {
+                enabled: false
+              },
+              colors: ["#1bb32f"],
+              grid: {
+                show: false,
+                padding: {
+                  top: 0,
+                  bottom: 0,
+                  left: 0,
+                  right: 0
+                },
+                
+              },
+              xaxis: {
+                axisTicks: {
+                  show: false
+                },
+                axisBorder: {
+                  show: false,
+                },
+                labels: {
+                  show: true
+                },
+                categories: ["Mo","Tu","We","Th","Fr","Sa", "Su","Mo"]
+              },
+              yaxis: {
+                axisTicks: {
+                  show: false
+                },
+                axisBorder: {
+                  show: false
+                },
+                labels: {
+                  show: false
+                }
+              },
+              plotOptions: {
+                bar: {
+                  horizontal: false,
+                  columnWidth: '75%',
+                  borderRadius: 5,
+                  borderRadiusApplication: "around"
+                }
+              }
+            }}
+          />
         </div>
         {/* mentors */}
         <div>
@@ -59,7 +126,11 @@ const RightSideBar = () => {
                 >
                   <div className="flex items-center gap-x-1.5">
                     <div className="w-[20px] aspect-square rounded-full overflow-hidden">
-                      <img className="w-full h-full object-center object-cover" src="https://i.pinimg.com/originals/a0/60/be/a060be70906ff02fea00add1144e4ad7.jpg" alt="" />
+                      <img
+                        className="w-full h-full object-center object-cover"
+                        src="https://i.pinimg.com/originals/a0/60/be/a060be70906ff02fea00add1144e4ad7.jpg"
+                        alt=""
+                      />
                     </div>
                     <div className="text-sm">
                       <p>Tadios Kiruble</p>
