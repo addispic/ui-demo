@@ -6,6 +6,10 @@ import { IoLocationSharp } from "react-icons/io5";
 import { LuCalendarClock } from "react-icons/lu";
 import { LiaUserSolid } from "react-icons/lia";
 import { IoChevronDownOutline } from "react-icons/io5";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import { MdSafetyCheck } from "react-icons/md";
+import { AiOutlineFundView } from "react-icons/ai";
+import { MdOutlinePriceChange } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -112,8 +116,220 @@ const Home = () => {
             </div>
             <button className="flex items-center gap-x-2.5 px-1.5 py-1 rounded-full bg-orange-500 text-white text-sm">
               <span>Results</span>
-              <IoChevronDownOutline className="-rotate-90"/>
+              <IoChevronDownOutline className="-rotate-90" />
             </button>
+          </div>
+        </div>
+      </div>
+      {/* 3 */}
+      <div className="py-24">
+        <div className="main-padding flex gap-10">
+          {/* left */}
+          <div className="w-[40%] shrink-0">
+            <div className="w-full h-full rounded-xl overflow-hidden">
+              <div className="h-full w-full">
+                <div className="w-full h-full rounded-lg overflow-hidden relative">
+                  <img
+                    className="w-full h-full object-center object-cover"
+                    src="https://www.wanderlustmagazine.com/wp-content/uploads/2023/11/shutterstock_2233560031.jpg"
+                    alt=""
+                  />
+                  <footer className="absolute left-0 py-1.5 bottom-0 w-full flex items-center justify-between text-white z-20 px-3 bg-black bg-opacity-5">
+                    <div>
+                      <p className="font-medium">Bale Mountain</p>
+                      <p className="text-xs text-neutral-200 -mt-1">
+                        Central Ethiopia
+                      </p>
+                    </div>
+                    <div>
+                      <IoArrowForwardCircleOutline className="text-3xl cursor-pointer -rotate-45" />
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* right */}
+          <div className="flex-1 flex flex-col">
+            {/* top */}
+            <div className="flex gap-10 w-full">
+              <div className="w-[50%]">
+                <div className="w-full h-[170px] rounded-lg overflow-hidden relative">
+                  <img
+                    className="w-full h-full object-center object-cover"
+                    src="https://imgix.brilliant-ethiopia.com/Gondar-Banner.JPG?auto=format,enhance,compress&fit=crop&crop=entropy,faces,focalpoint&w=1880&h=740&q=30"
+                    alt=""
+                  />
+                  <footer className="absolute left-0 py-1.5 bottom-0 w-full flex items-center justify-between text-white z-20 px-3 bg-black bg-opacity-5">
+                    <div>
+                      <p className="font-medium">Gonder</p>
+                      <p className="text-xs text-neutral-200 -mt-1">
+                        North Ethiopia
+                      </p>
+                    </div>
+                    <div>
+                      <IoArrowForwardCircleOutline className="text-3xl cursor-pointer -rotate-45" />
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              {/* second */}
+              <div className="w-[50%]">
+                <div className="w-full h-[170px] rounded-lg overflow-hidden relative">
+                  <img
+                    className="w-full h-full object-center object-cover"
+                    src="https://cdn.britannica.com/23/93423-050-107B2836/obelisk-kingdom-Aksum-Ethiopian-name-city.jpg"
+                    alt=""
+                  />
+                  <footer className="absolute left-0 py-1.5 bottom-0 w-full flex items-center justify-between text-white z-20 px-3 bg-black bg-opacity-5">
+                    <div>
+                      <p className="font-medium">Axum</p>
+                      <p className="text-xs text-neutral-200 -mt-1">
+                        North Ethiopia
+                      </p>
+                    </div>
+                    <div>
+                      <IoArrowForwardCircleOutline className="text-3xl cursor-pointer -rotate-45" />
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+            {/* bottom */}
+            <div className="mt-10">
+              <div className="w-full">
+                <div className="w-full h-[400px] rounded-lg overflow-hidden relative">
+                  <img
+                    className="w-full h-full object-center object-cover"
+                    src="https://imgix.brilliant-ethiopia.com/Omo-body-paint-WE.jpg?auto=format,enhance,compress&fit=crop&crop=entropy,faces,focalpoint&w=1200&h=720&q=50"
+                    alt=""
+                  />
+                  <footer className="absolute left-0 py-1.5 bottom-0 w-full flex items-center justify-between text-white z-20 px-3 bg-black bg-opacity-5">
+                    <div>
+                      <p className="font-medium">SNNPR</p>
+                      <p className="text-xs text-neutral-200 -mt-1">
+                        South Ethiopia
+                      </p>
+                    </div>
+                    <div>
+                      <IoArrowForwardCircleOutline className="text-3xl cursor-pointer -rotate-45" />
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* 4 */}
+      <div className="">
+        <div className="main-padding">
+          <div className="max-w-[720px] mx-auto">
+            <h3 className="text-center font-bold text-3xl mb-5">
+              Travel with Us
+            </h3>
+            <p className="text-center text-neutral-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              voluptas optio nam mollitia exercitationem atque iste, sed magni
+              dolore consectetur. At error veniam itaque!
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* 5 */}
+      <div className="py-24">
+        <div className="main-padding flex gap-10">
+          {/* left */}
+          <div className="w-[40%] shrink-0">
+            <h3 className="text-3xl font-bold">Experience new Adventure</h3>
+            <p className="mt-5 text-neutral-600">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+              harum, doloremque asperiores natus iure autem provident nam!
+              Perferendis nesciunt dolorum libero quidem corporis.
+            </p>
+            {/* list */}
+            <div className="mt-5">
+              {/* 1 */}
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-[36px] shrink-0 text-xl aspect-square rounded-full overflow-hidden flex items-center justify-center bg-orange-500 text-white">
+                  <MdSafetyCheck />
+                </div>
+                <div>
+                  <h4 className="font-medium">Safe Traveling</h4>
+                  <p className="text-sm text-neutral-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium optio quas suscipit.
+                  </p>
+                </div>
+              </div>
+              {/* 2 */}
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-[36px] shrink-0 text-xl aspect-square rounded-full overflow-hidden flex items-center justify-center bg-orange-500 text-white">
+                  <MdOutlinePriceChange />
+                </div>
+                <div>
+                  <h4 className="font-medium">Affordable Price</h4>
+                  <p className="text-sm text-neutral-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium optio quas suscipit.
+                  </p>
+                </div>
+              </div>
+              {/* 3 */}
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-[36px] shrink-0 text-xl aspect-square rounded-full overflow-hidden flex items-center justify-center bg-orange-500 text-white">
+                  <AiOutlineFundView />
+                </div>
+                <div>
+                  <h4 className="font-medium">Comfort Accommodation</h4>
+                  <p className="text-sm text-neutral-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Praesentium optio quas suscipit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* right */}
+          <div className="flex-1 rounded-xl overflow-hidden">
+            <img
+              src="https://www.venture-ethiopia.com/assets/Uploads/_resampled/CroppedFocusedImageWzE2MDAsNTAwLCJ5Iiw1NzJd/Fishermen-Lake-Tana-2260748777.jpg"
+              className="w-full h-full object-center object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      {/* 6 */}
+      <div className="py-12 bg-black text-white">
+        <div className="main-padding flex items-center gap-x-10">
+          <p className="w-[40%] text-2xl font-bold">
+            Discover a Mesmerizing Nature Landscape & Stunning Culture
+          </p>
+          <div className="w-[60%]">
+            <p className="text-neutral-300">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+              similique ipsa illo neque soluta laborum inventore doloremque,
+              voluptatum corporis, suscipit cumque dignissimos accusamus.
+            </p>
+            <button className="mt-3 px-3 py-1 bg-neutral-300 rounded-md overflow-hidden text-black">
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* 7 */}
+      <div className="mt-20">
+        <div className="main-padding">
+          <div className="max-w-[720px] mx-auto">
+            <h3 className="text-center font-bold text-3xl mb-5">
+              About Us
+            </h3>
+            <p className="text-center text-neutral-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              voluptas optio nam mollitia exercitationem atque iste, sed magni
+              dolore consectetur. At error veniam itaque!
+            </p>
           </div>
         </div>
       </div>
