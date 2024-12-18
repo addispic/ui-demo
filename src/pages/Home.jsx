@@ -19,7 +19,7 @@ const Home = () => {
         {/* bg */}
         <div className="absolute left-0 h-full w-full overflow-hidden bg-black">
           <img
-            className="w-full h-full object-center object-cover opacity-25"
+            className="w-full h-full object-center object-cover opacity-55"
             src="https://www.exploriada.com/media/1103/pano3_edited-resized.jpg"
             alt=""
           />
@@ -319,12 +319,10 @@ const Home = () => {
         </div>
       </div>
       {/* 7 */}
-      <div className="mt-20">
+      <div className="my-20">
         <div className="main-padding">
           <div className="max-w-[720px] mx-auto">
-            <h3 className="text-center font-bold text-3xl mb-5">
-              About Us
-            </h3>
+            <h3 className="text-center font-bold text-3xl mb-5">About Us</h3>
             <p className="text-center text-neutral-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
               voluptas optio nam mollitia exercitationem atque iste, sed magni
