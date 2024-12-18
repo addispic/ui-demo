@@ -8,7 +8,7 @@ import { HiUserPlus } from "react-icons/hi2";
 
 const RightSideBar = () => {
   return (
-    <div className="min-w-80 px-5 py-3 flex">
+    <div className="w-0 xl:w-72 xl:px-5 py-3 pt-0 xl:pt-3 flex xl:relative translate-x-0 ease-in-out duration-150 absolute right-0 top-0 h-full z-30 overflow-hidden" id="right-side-bar">
       <div className="flex-1 bg-white rounded-xl overflow-hidden p-3">
         {/* header */}
         <header className="flex items-center justify-between">

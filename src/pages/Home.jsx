@@ -93,7 +93,7 @@ const Home = () => {
           </div>
         </div>
         {/* 2 */}
-        <div className="mt-7 grid grid-cols-3 gap-x-10">
+        <div className="mt-7 grid grid-cols-2 gap-y-3 sm:grid-cols-3 gap-x-10">
           {grid.map((item, index) => {
             return (
               <div
@@ -135,38 +135,18 @@ const Home = () => {
               <FaArrowRight />
             </button>
           </header>
-          {/* swiper*/}
-          <div className="max-w-[730px] bg-white rounded-xl overflow-hidden mt-3 px-3">
-            <Swiper
-              breakpoints={{
-                300: {
-                  slidesPerView: 1,
-                  spaceBetween: 5,
-                },
-                450: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                },
-                650: {
-                  slidesPerView: 3,
-                  spaceBetween: 24,
-                },
-                750: {
-                  slidesPerView: 3,
-                  spaceBetween: 32,
-                },
-              }}
-              freeMode={true}
-              pagination={{ clickable: true }}
-              modules={[Pagination, FreeMode]}
+          {/* grid*/}
+          <div className=" bg-white rounded-xl overflow-hidden mt-3 px-3">
+            <div
+              className="grid grid-cols-2 md:grid-cols-4 gap-5"
             >
               {courses.map((coreItem, index) => {
                 return (
-                  <SwiperSlide key={index}>
+                  <div key={index}>
                     <div className="mb-10 mt-5">
                       {/* image */}
-                      <div className="h-[120px] relative w-full rounded-xl overflow-hidden">
-                        <img src={coreItem.image} alt="" />
+                      <div className="h-[120px] relative w-full rounded-xl overflow-hidden shrink-0">
+                        <img src={coreItem.image} alt="" className="w-full h-full object-center object-cover"/>
                         <div className="absolute top-1.5 right-1.5 w-[24px] aspect-square rounded-full bg-white bg-opacity-15 text-white flex items-center justify-center cursor-pointer">
                           <CiHeart />
                         </div>
@@ -192,10 +172,10 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                  </SwiperSlide>
+                  </div>
                 );
               })}
-            </Swiper>
+            </div>
           </div>
         </div>
       </div>

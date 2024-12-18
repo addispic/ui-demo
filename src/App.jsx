@@ -7,14 +7,14 @@ import RightSideBar from "./components/RightSideBar"
 import Home from "./pages/Home"
 const App = () => {
   return (
-    <div className="w-screen h-screen overflow-hidden flex">
+    <div className="w-screen h-screen overflow-hidden flex relative">
       {/* left side bar */}
       <LeftSideBar />
       {/* content */}
       <div className='flex-1 flex flex-col bg-neutral-100'>
         <Header /> 
         {/* pages */}
-        <div className='flex-1 flex'>
+        <div className='flex-1 flex relative'>
           <Routes>
             <Route path='/' element={<Home />}></Route>
           </Routes>

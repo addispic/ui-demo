@@ -9,7 +9,7 @@ import { GoTasklist } from "react-icons/go";
 import { MdOutlineGroupAdd } from "react-icons/md";
 import { MdOutlineSettingsSuggest } from "react-icons/md";
 import { RxExit } from "react-icons/rx";
-
+import { AiOutlineClose } from "react-icons/ai";
 
 const LeftSideBar = () => {
   // states
@@ -60,16 +60,42 @@ const LeftSideBar = () => {
       status: "Friend",
     },
   ]);
+  const leftSideBarTogglerHandler = () => {
+    const element = document.getElementById("left-side-bar");
+    if (element?.classList.contains("absolute")) {
+      if (element?.classList.contains("w-0")) {
+        element?.classList.remove("w-0");
+        element?.classList.add("w-52");
+        element?.classList.add("px-5");
+        element?.classList.add("py-4");
+      } else {
+        element?.classList.remove("w-52");
+        element?.classList.remove("px-5");
+        element?.classList.remove("py-4");
+        element?.classList.add("w-0");
+      }
+    }
+  };
+
   return (
-    <div className="min-w-52 bg-white px-5 py-4 flex flex-col">
+    <div
+      className="lg:w-52 w-0 transition-all ease-in-out duration-150 bg-white lg:px-5 lg:py-4 flex flex-col lg:relative absolute left-0 top-0 h-full z-40 overflow-hidden"
+      id="left-side-bar"
+    >
       {/* top */}
       <div className="flex-1">
-        <div className="flex items-center gap-x-1.5 cursor-pointer">
-          <RiGraduationCapFill className="text-2xl text-green-500" />
-          <h3 className="font-black">
-            <span>addis</span>
-            <span className="text-green-500">PIC</span>
-          </h3>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-x-1.5 cursor-pointer">
+            <RiGraduationCapFill className="text-2xl text-green-500" />
+            <h3 className="font-black">
+              <span>addis</span>
+              <span className="text-green-500">PIC</span>
+            </h3>
+          </div>
+          <AiOutlineClose
+            onClick={leftSideBarTogglerHandler}
+            className="text-neutral-500 cursor-pointer lg:hidden transition-colors ease-in-out duration-150 hover:text-green-500 text-2xl"
+          />
         </div>
         {/* overview */}
         <div className="mt-10">
@@ -80,6 +106,7 @@ const LeftSideBar = () => {
               return (
                 <div
                   onClick={() => {
+                    leftSideBarTogglerHandler();
                     setOverview((prev) => {
                       return {
                         ...prev,
@@ -140,11 +167,11 @@ const LeftSideBar = () => {
         <h3 className="text-xs text-neutral-400 my-1 uppercase">Settings</h3>
 
         <div className="flex items-center gap-x-1.5 px-1 text-neutral-500 transition-colors ease-in-out duration-150 hover:text-neutral-700 text-sm cursor-pointer mb-3">
-          <MdOutlineSettingsSuggest className="text-lg"/>
+          <MdOutlineSettingsSuggest className="text-lg" />
           <span>Settings</span>
         </div>
         <div className="flex items-center gap-x-1.5 px-1 text-neutral-500 transition-colors ease-in-out duration-150 hover:text-neutral-700 text-sm cursor-pointer mb-3">
-          <RxExit className="text-[.975rem]"/>
+          <RxExit className="text-[.975rem]" />
           <span>Logout</span>
         </div>
       </div>
