@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="bg-neutral-900 text-white pt-12 pb-5">
       <div className="main-padding flex flex-col">
         {/* top */}
-        <div className="flex items-center justify-between gap-12">
+        <div className="flex items-center justify-between gap-12 flex-wrap">
           <div>
             <div className="flex items-center gap-x-1.5 text-neutral-300">
               <SiEagle className="text-3xl" />

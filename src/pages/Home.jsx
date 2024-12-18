@@ -29,7 +29,7 @@ const Home = () => {
           <div className="w-max px-3 py-0.5 text-sm bg-white bg-opacity-20 rounded-full">
             <p>Addispic Tour & Travel</p>
           </div>
-          <h3 className="my-5 text-5xl font-bold w-[75%] leading-[4rem]">
+          <h3 className="my-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold lg:w-[75%] xl:leading-[4rem]">
             Explore Ethiopia With{" "}
             <span className="text-orange-600">Addispic</span> Tour & Travel
             Agency
@@ -39,7 +39,7 @@ const Home = () => {
             <FaArrowRightLong className="text-lg relative z-20" />
           </button>
           {/* stuffs */}
-          <div className="mt-16 w-[60%] grid grid-cols-2 gap-7">
+          <div className="mt-16 w-full lg:w-[60%] grid grid-cols-2 gap-7">
             <div className="flex items-center gap-x-3.5">
               <div className="shrink-0 w-[24px] aspect-square rounded-full overflow-hidden flex items-center justify-center bg-white bg-opacity-15 text-white">
                 <IoLocationSharp />
@@ -62,9 +62,9 @@ const Home = () => {
       {/* 2 */}
       <div>
         <div className="main-padding">
-          <div className="max-w-[820px] mx-auto bg-white shadow-xl rounded-md overflow-hidden p-3 flex items-end gap-x-3 mt-[-2.5rem] relative z-50">
+          <div className="max-w-[820px] mx-auto bg-white shadow-xl rounded-md overflow-hidden p-3 flex flex-col md:flex-row gap-y-3 md:items-end gap-x-3 mt-[-2.5rem] relative z-50">
             {/* option grid */}
-            <div className="flex-1 grid grid-cols-4 gap-5">
+            <div className="flex-1 grid grid-cols-2  md:grid-cols-4 gap-5">
               {/* one */}
               <div>
                 <p className="font-medium mb-1.5">Check Ins</p>
@@ -114,7 +114,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <button className="flex items-center gap-x-2.5 px-1.5 py-1 rounded-full bg-orange-500 text-white text-sm">
+            <button className="flex items-center w-max gap-x-2.5 px-1.5 py-1 rounded-full bg-orange-500 text-white text-sm">
               <span>Results</span>
               <IoChevronDownOutline className="-rotate-90" />
             </button>
@@ -123,9 +123,9 @@ const Home = () => {
       </div>
       {/* 3 */}
       <div className="py-24">
-        <div className="main-padding flex gap-10">
+        <div className="main-padding flex flex-col-reverse lg:flex-row gap-10">
           {/* left */}
-          <div className="w-[40%] shrink-0">
+          <div className="w-full h-[300px] lg:h-auto lg:w-[40%] shrink-0">
             <div className="w-full h-full rounded-xl overflow-hidden">
               <div className="h-full w-full">
                 <div className="w-full h-full rounded-lg overflow-hidden relative">
@@ -198,7 +198,7 @@ const Home = () => {
             {/* bottom */}
             <div className="mt-10">
               <div className="w-full">
-                <div className="w-full h-[400px] rounded-lg overflow-hidden relative">
+                <div className="w-full h-[300px] lg:h-[400px] rounded-lg overflow-hidden relative">
                   <img
                     className="w-full h-full object-center object-cover"
                     src="https://imgix.brilliant-ethiopia.com/Omo-body-paint-WE.jpg?auto=format,enhance,compress&fit=crop&crop=entropy,faces,focalpoint&w=1200&h=720&q=50"
@@ -238,9 +238,9 @@ const Home = () => {
       </div>
       {/* 5 */}
       <div className="py-24">
-        <div className="main-padding flex gap-10">
+        <div className="main-padding flex flex-col-reverse lg:flex-row gap-10">
           {/* left */}
-          <div className="w-[40%] shrink-0">
+          <div className="w-full lg:w-[40%] shrink-0">
             <h3 className="text-3xl font-bold">Experience new Adventure</h3>
             <p className="mt-5 text-neutral-600">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
@@ -291,7 +291,7 @@ const Home = () => {
             </div>
           </div>
           {/* right */}
-          <div className="flex-1 rounded-xl overflow-hidden">
+          <div className="flex-1  rounded-xl overflow-hidden">
             <img
               src="https://www.venture-ethiopia.com/assets/Uploads/_resampled/CroppedFocusedImageWzE2MDAsNTAwLCJ5Iiw1NzJd/Fishermen-Lake-Tana-2260748777.jpg"
               className="w-full h-full object-center object-cover"
@@ -302,11 +302,11 @@ const Home = () => {
       </div>
       {/* 6 */}
       <div className="py-12 bg-black text-white">
-        <div className="main-padding flex items-center gap-x-10">
-          <p className="w-[40%] text-2xl font-bold">
+        <div className="main-padding flex flex-col lg:flex-row lg:items-center gap-x-10 gap-y-5">
+          <p className="w-full lg:w-[40%] text-2xl font-bold">
             Discover a Mesmerizing Nature Landscape & Stunning Culture
           </p>
-          <div className="w-[60%]">
+          <div className="w-full lg:w-[60%]">
             <p className="text-neutral-300">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
               similique ipsa illo neque soluta laborum inventore doloremque,

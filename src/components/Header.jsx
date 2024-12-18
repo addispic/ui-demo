@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+// icons
+import { CiMenuBurger } from "react-icons/ci";
+
 const Header = () => {
   // links
   const [links, setLinks] = useState([
@@ -24,8 +27,9 @@ const Header = () => {
       <div className="main-padding flex items-center justify-between text-neutral-300 py-3">
         <h3 className="text-2xl font-black cursor-pointer">addispic</h3>
         <div>
+          <CiMenuBurger className="md:hidden text-2xl cursor-pointer text-neutral-300" />
           {/* links */}
-          <div className="flex items-center gap-x-1.5">
+          <div className="md:flex items-center gap-x-1.5 hidden">
             {links.map((item, index) => {
               return (
                 <div
